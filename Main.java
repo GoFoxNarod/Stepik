@@ -3,13 +3,14 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int x = sc.nextInt();
-        int y = sc.nextInt();
-        sum(x,y);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int c = sc.nextInt();
+        multiply(a,b,c);
+
     }
-    static void sum(int x, int y){
-        int z = x+y;
-        System.out.println(z);
+   static void multiply(int a, int b,int c){
+       System.out.println(a*b*c);
     }
 
 }
