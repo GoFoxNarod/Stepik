@@ -3,14 +3,21 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int a = sc.nextInt();
-        int b = sc.nextInt();
-        int c = sc.nextInt();
-        multiply(a,b,c);
+        String sOne = sc.next();
+        sc.next();
+        String sTy = sc.next();
+        twoWords(sOne,sTy);
 
     }
-   static void multiply(int a, int b,int c){
-       System.out.println(a*b*c);
+    static void twoWords(String s1, String s2){
+        if (s1.length() > s2.length()){
+            System.out.println("Первая строка");
+        }else if (s2.length() > s1.length()){
+            System.out.println("Вторая строка");
+        }else {
+            System.out.println("Строки равны");
+        }
+
     }
 
 }
