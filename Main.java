@@ -23,7 +23,6 @@ public class Main {
             System.out.println(Math.round((Math.round(2*Math.PI*r))));
             System.out.println(Math.round(Math.ceil(Math.PI*(r*r))));
         }
-
     }
 
 }
