@@ -3,19 +3,25 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        String sOne = sc.next();
-        sc.next();
-        String sTy = sc.next();
-        twoWords(sOne,sTy);
+        String figura = sc.nextLine();
+        int a = sc.nextInt();
+        perimetr(figura,a);
+        area(figura,a);
 
     }
-    static void twoWords(String s1, String s2){
-        if (s1.length() > s2.length()){
-            System.out.println("Первая строка");
-        }else if (s2.length() > s1.length()){
-            System.out.println("Вторая строка");
-        }else {
-            System.out.println("Строки равны");
+    static void perimetr(String square,int a){
+        String lowerCase = square.toLowerCase();
+        if (lowerCase.equals("квадрат")){
+            System.out.println(a*4);
+            System.out.println(a*a);
+        }
+
+    }
+    static void area(String circle,int r){
+        String lowerCase = circle.toLowerCase();
+        if (lowerCase.equals("круг")){
+            System.out.println(Math.round((Math.round(2*Math.PI*r))));
+            System.out.println(Math.round(Math.ceil(Math.PI*(r*r))));
         }
 
     }
